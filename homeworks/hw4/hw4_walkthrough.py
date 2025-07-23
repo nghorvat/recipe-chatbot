@@ -4,7 +4,7 @@ __generated_with = "0.12.8"
 app = marimo.App(width="columns")
 
 
-@app.cell(column=0)
+@app.cell(column=0, hide_code=True)
 def _():
     import marimo as mo
     import pandas as pd
@@ -45,7 +45,7 @@ def _(Path):
     return (BASE_PATH,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         """
@@ -57,6 +57,8 @@ def _(mo):
         - Generating synthetic queries for evaluation
         - Measuring retrieval performance with standard IR metrics
         - (Optional) Using LLM query rewriting to improve retrieval
+
+        For a recording of the homework walkthrough please see: https://youtu.be/GMShL5iC8aY
         """
     )
     return
@@ -83,7 +85,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         r"""
@@ -114,7 +116,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         """
@@ -389,7 +391,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         """
@@ -547,7 +549,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(
         """
